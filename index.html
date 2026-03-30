@@ -233,6 +233,133 @@
             margin-top: 24px;
         }
 
+        
+        /* Showtimes Section */
+        .showtime-date {{
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }}
+
+        .showtime-grid {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 28px;
+        }}
+
+        .showtime-card {{
+            padding: 14px 16px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background: #1e1e24;
+        }}
+
+        .showtime-theater-name {{
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #e8e6de;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }}
+
+        .showtime-neighborhood {{
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 11px;
+            color: #777;
+            margin-bottom: 10px;
+        }}
+
+        .showtime-movie {{
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }}
+
+        .showtime-title {{
+            font-size: 14px;
+            font-weight: 600;
+            color: #d4d2ca;
+        }}
+
+        .showtime-meta {{
+            font-size: 11px;
+            color: #777;
+        }}
+
+        .showtime-times {{
+            display: block;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            color: #c46a5a;
+            letter-spacing: 0.3px;
+        }}
+
+        @media (max-width: 700px) {{
+            .showtime-grid {{ grid-template-columns: 1fr; }}
+        }}
+
+        
+        /* Arcane City Events */
+        .arcane-credit {{
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 11px;
+            color: #777;
+            margin-bottom: 16px;
+        }}
+
+        .arcane-grid {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px 28px;
+        }}
+
+        .arcane-event {{
+            margin-bottom: 8px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #2a2a30;
+        }}
+
+        .arcane-title {{
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-bottom: 4px;
+        }}
+
+        .arcane-title a {{
+            color: #e8e6de;
+            text-decoration: none;
+        }}
+
+        .arcane-title a:hover {{
+            color: #c46a5a;
+        }}
+
+        .arcane-date {{
+            display: block;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            color: #c46a5a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }}
+
+        .arcane-desc {{
+            font-size: 13px;
+            line-height: 1.5;
+            color: #888;
+        }}
+
+        @media (max-width: 700px) {{
+            .arcane-grid {{ grid-template-columns: 1fr; }}
+        }}
+
+
         /* Responsive */
         @media (max-width: 700px) {
             .masthead h1 { font-size: 36px; }
@@ -255,9 +382,9 @@
         <!-- Masthead -->
         <header class="masthead">
             <div class="masthead-top">
-                <span>Monday, March 23, 2026</span>
-                <span>Vol. I, No. 082</span>
-                <span>15 stories today</span>
+                <span>Sunday, March 29, 2026</span>
+                <span>Vol. I, No. 088</span>
+                <span>6 stories today</span>
             </div>
             <h1>The Bill O&rsquo;Toole Tribune</h1>
             <p class="masthead-subtitle">All the newsletters that&rsquo;s fit to print</p>
@@ -267,83 +394,41 @@
         <!-- Lead Story -->
         
             <article class="lead-story">
-                <p class="kicker">Jeremy Scahill</p>
-                <h2 class="lead-headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d1bd87cded1ade">Iran Blasts Trump’s Claims of Direct Talks as “Fake News” Aimed at Manipulating Markets</a></h2>
-                <p class="lead-summary">In an interview with Drop Site, a senior Iranian official refuted claims made by President Donald Trump about direct negotiations between the U.S. and Iran to end the ongoing war. The official called Trump&#x27;s claims &quot;fake news&quot; and suggested they were intended to manipulate markets. This denial comes after Trump&#x27;s threat to target Iranian energy infrastructure if the Strait of Hormuz wasn&#x27;t opened within 48 hours.</p>
-                <a href="https://mail.google.com/mail/u/0/#inbox/19d1bd87cded1ade" class="read-more">Read full story →</a>
+                <p class="kicker">Robert Reich</p>
+                <h2 class="lead-headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d3b75dcd4b7efb">Sunday caption contest: Best Sign?</a></h2>
+                <p class="lead-summary">Robert Reich&#x27;s newsletter features a weekly caption contest centered around user-submitted captions for a featured image. This week&#x27;s contest invites readers to submit captions in the comments section by Monday at 9 pm PT. Last week&#x27;s winning caption was &quot;Quick! Toss him an anchor!&quot; by Karla Von Huben.</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox/19d3b75dcd4b7efb" class="read-more">Read full story →</a>
             </article>
 
         <!-- Sections -->
         
         <section class="newspaper-section">
-            <h2 class="section-header">Headlines</h2>
-            <div class="section-grid">
-                
-                <article class="story">
-                    <p class="byline">Drop Site Daily</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d1b3d4b5da0626">Trump backs off Iran power plant threat; Israeli settlers torch West Bank villages; Dozens killed in East Darfur h…</a></h3>
-                    <p class="summary">Drop Site Daily for March 23, 2026, reports that Donald Trump has backed off his threat to target Iran&#x27;s energy infrastructure. Other key headlines include reports of Israeli settlers torching West Bank villages and dozens killed in a hospital attack in East Darfur. The briefing also details continued strikes on Iran, a rising death toll surpassing 1,500, and the US and Israel striking Iran&#x27;s Natanz nuclear facility.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d1b3d4b5da0626" class="read-more">Read full →</a>
-                </article>
-                <article class="story">
-                    <p class="byline">Ryan Grim</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d180067a22544f">Exclusive: Cuba Is Prepared to Offer Compensation to Americans Who Lost Property in the 1959 Revolution</a></h3>
-                    <p class="summary">Ryan Grim reports that Cuba is prepared to discuss compensation for Americans who lost property during the 1959 revolution in talks with the U.S., according to an exclusive interview with Cuban Deputy Foreign Minister Carlos Fernandez de Cossio. This offer comes as Cuba faces a severe oil blockade and widespread power outages. Grim visited William Soler Pediatric Hospital and reported that the hospital is now operating on generators due to the blackouts.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d180067a22544f" class="read-more">Read full →</a>
-                </article>
-            </div>
-        </section>
-        <section class="newspaper-section">
             <h2 class="section-header">Opinion</h2>
             <div class="section-grid">
                 
                 <article class="story">
-                    <p class="byline">Paul Krugman from Paul Krugman</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d1aefd22cb5de9">Adventures in Fantasy Diplomacy</a></h3>
-                    <p class="summary">Paul Krugman discusses President Trump&#x27;s claim of productive negotiations with Iran, contrasting it with the Iranian government&#x27;s denial of such talks. Krugman suggests that Trump is either lying or fantasizing, asserting there is no reason to believe his claims. He frames the situation as another instance of America&#x27;s declining global power.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d1aefd22cb5de9" class="read-more">Read full →</a>
-                </article>
-                <article class="story">
                     <p class="byline">Adam Tooze from Chartbook</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d1a4d96a2f5502">The geography of world trade. Demolitions in China. Child labour &amp; Ashbery on the problem of anxiety.</a></h3>
-                    <p class="summary">Adam Tooze&#x27;s Chartbook newsletter highlights several key links and topics, including the geography of world trade, which is centered around the EU, China, and the US. It also touches on scenario analysis by the ECB regarding potential conflict escalation in the Middle East, China&#x27;s cost-effective nuclear reactor construction, and the demolition of pre-1950 housing in China. Further topics include child labor and a reference to Ashbery on the problem of anxiety.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d1a4d96a2f5502" class="read-more">Read full →</a>
+                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d3933910523dc1">Fertilizer plants out. Warehousing people. Overcoming modernity. Normcore.</a></h3>
+                    <p class="summary">Adam Tooze&#x27;s Chartbook newsletter features a curated selection of links, images, and reading material on diverse topics. This edition includes content on fertilizer plants, warehousing for people by ICE, overcoming modernity, and normcore fashion.</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox/19d3933910523dc1" class="read-more">Read full →</a>
                 </article>
                 <article class="story">
                     <p class="byline">Paul Krugman from Paul Krugman</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d1a457e4717ad7">When Hyperglobalization Meets Chaos</a></h3>
-                    <p class="summary">Paul Krugman discusses the potential implications of the Iran conflict on global oil supplies and the increasing dependence on the Strait of Hormuz. He notes that the Gulf region is a critical source of fertilizer and helium, essential for semiconductors and medical uses. Krugman argues that the world&#x27;s dependence on the Strait of Hormuz extends beyond oil and gas, creating vulnerabilities.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d1a457e4717ad7" class="read-more">Read full →</a>
+                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d392b5ab7a850b">Is America Suffering from the “Resource Curse”?</a></h3>
+                    <p class="summary">Paul Krugman&#x27;s newsletter discusses whether the U.S. is suffering from the &quot;resource curse&quot; due to its status as a major oil producer. He argues that the U.S. is aligning itself as the &quot;last big petrostate,&quot; which could have negative consequences. The newsletter defines oil rents as the difference between the value of oil produced and the cost of producing it.</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox/19d392b5ab7a850b" class="read-more">Read full →</a>
                 </article>
                 <article class="story">
                     <p class="byline">Robert Reich</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d19c6e4d0e07a1">Why He’ll Surrender Soon</a></h3>
-                    <p class="summary">Robert Reich argues that President Trump is likely to withdraw from Iran soon, labeling it a &#x27;great victory&#x27; despite not achieving any clear objectives. Reich suggests that Trump&#x27;s decision stems from the war&#x27;s negative impact on his financial backers in Saudi Arabia, the UAE, and Qatar, as well as wealthy political supporters at home who are suffering from the sinking stock market and rising gasoline prices. He also says that the war is infuriating American voters, creating a potential political backlash in the midterm elections.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d19c6e4d0e07a1" class="read-more">Read full →</a>
+                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d38ac2c4617266">Sunday thought: Turning Yesterday&#x27;s Solidarity into Political Power</a></h3>
+                    <p class="summary">Robert Reich discusses turning recent solidarity demonstrations into political power by targeting vulnerable Republican senators and House members. He suggests getting them to switch parties or flipping their seats to shift the balance of power in Congress. Reich emphasizes working with existing activist networks and local Indivisible chapters.</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox/19d38ac2c4617266" class="read-more">Read full →</a>
                 </article>
                 <article class="story">
                     <p class="byline">Robert Reich</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d177f911664538">Sunday caption contest: Drowning</a></h3>
-                    <p class="summary">Robert Reich&#x27;s newsletter features a weekly caption contest using an image of a figure drowning in a brown liquid. The winning caption from the previous week, submitted by Jeff Schwartz, was: &#x27;Looks like old man Trump is dropping fake news on us again.&#x27;</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d177f911664538" class="read-more">Read full →</a>
-                </article>
-                <article class="story">
-                    <p class="byline">Paul Krugman from Paul Krugman</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d16e7fc7fb47a7">Iranian Oil, Still Shipping</a></h3>
-                    <p class="summary">Paul Krugman discusses the fact that Iran continues to export oil despite the ongoing conflict, arguing it demonstrates America&#x27;s diminishing influence. He notes that while Trump threatened to bomb Iranian power plants, the U.S. is simultaneously allowing Iran to export oil through the Strait of Hormuz. Krugman suggests this contradictory approach highlights the U.S.&#x27;s unwillingness to endure pain in the conflict.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d16e7fc7fb47a7" class="read-more">Read full →</a>
-                </article>
-                <article class="story">
-                    <p class="byline">Adam Tooze from Chartbook</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d152bce6e0320c">Texas energy is changing. $200bn for America&#x27;s banks. Ireland&#x27;s population. Vernacular Practice: papers on Flatnes…</a></h3>
-                    <p class="summary">Adam Tooze&#x27;s Chartbook highlights Texas&#x27;s changing energy landscape and a potential $200 billion capital boost to US banks by the Federal Reserve. Other topics include Ireland&#x27;s population, papers on Flatness &amp; Threads, and Michael Barr&#x27;s attempt to enforce higher capital hurdles for big lenders. The newsletter also mentions a rise in anti-immigrant sentiment in Germany and the impact of higher interest rates on housing affordability in the US.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d152bce6e0320c" class="read-more">Read full →</a>
-                </article>
-                <article class="story">
-                    <p class="byline">Paul Krugman from Paul Krugman</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d151ffc404ceaa">How to Burn Less Oil</a></h3>
-                    <p class="summary">Paul Krugman discusses methods to reduce oil dependence in light of the ongoing Iran war and the potential for long-term disruptions to global oil supply. He points out that the world economy needs to function with less oil due to the risks associated with relying on the Strait of Hormuz. While reducing dependence should be easy, he notes, it will be hard to do it quickly because even with higher oil prices, reducing overall oil consumption is challenging in the short run.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d151ffc404ceaa" class="read-more">Read full →</a>
+                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d35216493cbaab">Toward a Pro-Democracy Movement</a></h3>
+                    <p class="summary">Robert Reich discusses his reasons for demonstrating, arguing that the goal extends beyond opposing Trump. He believes that Trump is a symptom of deeper issues like income inequality and declining trust in institutions. Reich cites that in 2013, 79% of Americans believed the government was run by a few big interests, indicating a pre-existing frustration with democracy.</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox/19d35216493cbaab" class="read-more">Read full →</a>
                 </article>
             </div>
         </section>
@@ -352,48 +437,339 @@
             <div class="section-single">
                 
                 <article class="story">
-                    <p class="byline">Arena Careers</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d1c90b21b88a4c">3/23 Daily Jobs Digest: Apply to Arena Academy</a></h3>
-                    <p class="summary">Arena Careers&#x27; Daily Jobs Digest lists several political job openings as of March 23. These include Communications Director positions for Erik Zeil Victory Committee in Georgia ($1,000-$1,800/month + bonuses), Shamsul for Queens Assembly District 30 in New York ($3,500-$5,000/month), and Siffert for Assembly (remote, salary unspecified). Finance Director positions are also advertised for Beth Andres-Beck For Congress in Maryland ($5,000-$6,000/month) and Erik Zeil Victory Committee ($1,000–$2,000/month + bonuses). Other roles include internships, fellowships, and management positions.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d1c90b21b88a4c" class="read-more">Read full →</a>
+                    <p class="byline">Corbin Trent with America&#x27;s Undoing</p>
+                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d39fe7dc7412b7">We Showed up. Our Leaders Schemed.</a></h3>
+                    <p class="summary">Corbin Trent reports that millions participated in protests across all 50 states against a potential war. Despite 76% of voters opposing the war, Democratic leaders are accused of blocking a vote for political convenience, allegedly preferring Trump to take responsibility. Three Republicans were reportedly ready to cross the aisle in the House.</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox/19d39fe7dc7412b7" class="read-more">Read full →</a>
                 </article>
             </div>
         </section>
+
+        <!-- Showtimes -->
+        
         <section class="newspaper-section">
-            <h2 class="section-header">Arts &amp; Culture</h2>
-            <div class="section-grid">
+            <h2 class="section-header">Showtimes</h2>
+            <p class="showtime-date">Sunday, March 29</p>
+            <div class="showtime-grid">
                 
-                <article class="story">
-                    <p class="byline">Ted Hope from Hope For Film</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d1a6a52c0e45bb">What are all the defunct US Distributors of the last twenty-five years?</a></h3>
-                    <p class="summary">Ted Hope&#x27;s newsletter explores the reasons behind the closure of numerous US film distributors over the past 25 years. He attributes this trend to factors such as media consolidation driven by shareholder capitalism, the dotcom crash, the 2008 financial crisis, the rise of global streaming platforms, and the impact of COVID-19. Hope also notes the broader trend of closures across various media sectors, including newspapers, magazines, and radio stations.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d1a6a52c0e45bb" class="read-more">Read full →</a>
-                </article>
-                <article class="story">
-                    <p class="byline">Ted Hope from Hope For Film</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d15440917774e3">Filmmaking Tools, Vol. 1</a></h3>
-                    <p class="summary">Ted Hope&#x27;s newsletter cross-posts a &quot;Filmmaking Tools, Vol. 1&quot; post from FilmStack&#x27;s Deep Dive, listing various filmmaking tools and software recommendations as of November 2025. The tools are provided by David Thomson, which include Apple Notes for idea capture, Highland Pro for writing, and Keynote for quick sales documents. It is intended as an index of useful filmmaking tools and suggestions from across Substack.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d15440917774e3" class="read-more">Read full →</a>
-                </article>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name">Manor Theatre</div>
+                        <div class="showtime-neighborhood">Squirrel Hill</div>
+                        
+                        <div class="showtime-movie">
+                            <span class="showtime-title">The AI Doc: Or How I Became an Apocaloptimist</span> <span class="showtime-meta">(PG-13, 1:43)</span>
+                            <span class="showtime-times">12:50, 3:00, 5:10, 7:20, 9:30</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Project Hail Mary</span> <span class="showtime-meta">(PG-13, 2:36)</span>
+                            <span class="showtime-times">12:20, 1:50, 3:25, 4:55, 6:30, 8:00, 9:35</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Hoppers</span> <span class="showtime-meta">(PG, 1:45)</span>
+                            <span class="showtime-times">11:50a, 2:00, 4:10, 6:20, 8:30</span>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name">Row House Cinema</div>
+                        <div class="showtime-neighborhood">Lawrenceville</div>
+                        
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Gentlemen Prefer Blondes</span> <span class="showtime-meta">(Not Rated, 1:31)</span>
+                            <span class="showtime-times">2:55</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">The Red Shoes</span> <span class="showtime-meta">(Not Rated, 2:13)</span>
+                            <span class="showtime-times">12:15</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Black Narcissus</span> <span class="showtime-meta">(Not Rated, 1:39)</span>
+                            <span class="showtime-times">4:50</span>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name">Row House Cinema - Hollywood</div>
+                        <div class="showtime-neighborhood">Dormont</div>
+                        
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Alpha</span> <span class="showtime-meta">(R, 2:08)</span>
+                            <span class="showtime-times">2:00, 4:40, 7:20</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Andre Is an Idiot</span> <span class="showtime-meta">(Not Rated, 1:27)</span>
+                            <span class="showtime-times">2:30, 4:45, 7:30</span>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name">Harris Theater</div>
+                        <div class="showtime-neighborhood">Downtown</div>
+                        
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Billy Preston: That&#x27;s The Way God Planned It</span> <span class="showtime-meta">(Not Rated, 1:45)</span>
+                            <span class="showtime-times">7:30</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">A Poet (Un poeta)</span> <span class="showtime-meta">(Not Rated, 2:00)</span>
+                            <span class="showtime-times">2:30</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Two-Lane Blacktop</span> <span class="showtime-meta">(R, 1:41)</span>
+                            <span class="showtime-times">5:00</span>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name">Dependable Drive-In</div>
+                        <div class="showtime-neighborhood">Moon Twp.</div>
+                        
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Forbidden Fruits</span> <span class="showtime-meta">(R, 1:43)</span>
+                            <span class="showtime-times">7:55</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Project Hail Mary</span> <span class="showtime-meta">(PG-13, 2:36)</span>
+                            <span class="showtime-times">7:50</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Undertone</span> <span class="showtime-meta">(R, 1:33)</span>
+                            <span class="showtime-times">10:40</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Hoppers</span> <span class="showtime-meta">(PG, 1:45)</span>
+                            <span class="showtime-times">7:55</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Scream 7</span> <span class="showtime-meta">(R, 1:54)</span>
+                            <span class="showtime-times">9:45</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">GOAT</span> <span class="showtime-meta">(PG, 1:35)</span>
+                            <span class="showtime-times">9:45</span>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name">Carnegie Museum of Art</div>
+                        <div class="showtime-neighborhood">Oakland</div>
+                        
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Workingman’s Death</span>
+                            <span class="showtime-times">Thurs., Dec. 10, 7 p.m.</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Made in Bangladesh</span>
+                            <span class="showtime-times">Thurs., Nov. 12, 7 p.m.</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Born in Flames</span>
+                            <span class="showtime-times">Thurs., Oct. 8, 7 p.m.</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">This Is Not a Burial, It’s a Resurrection</span>
+                            <span class="showtime-times">Thurs., Sept. 10, 7 p.m.</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Silence Of Reason and Gama</span>
+                            <span class="showtime-times">Thurs., Aug. 6, 7 p.m.</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Europa: Based on a True Story</span>
+                            <span class="showtime-times">Thurs., July 9, 7 p.m.</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">West Indies: The Fugitive Slaves of Liberty</span>
+                            <span class="showtime-times">Thurs., June 11, 7 p.m.</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Surrealism as Tactic: A Black Women’s Film Festival and Community Workshop</span>
+                            <span class="showtime-times">Thurs., Feb. 26, 6 p.m.</span>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name">AMC Waterfront 22</div>
+                        <div class="showtime-neighborhood">Homestead</div>
+                        
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Ben-Hur - 2026 Re-release</span> <span class="showtime-meta">(G, 3:47)</span>
+                            <span class="showtime-times">2:00</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">The AI Doc: Or How I Became an Apocaloptimist</span> <span class="showtime-meta">(PG-13, 1:43)</span>
+                            <span class="showtime-times">2:05, 4:55, 7:45, 10:30</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Alpha</span> <span class="showtime-meta">(R, 2:08)</span>
+                            <span class="showtime-times">12:10</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Alpha</span> <span class="showtime-meta">(R, 2:08)</span>
+                            <span class="showtime-times">3:00, 6:05, 9:10</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Forbidden Fruits</span> <span class="showtime-meta">(R, 1:43)</span>
+                            <span class="showtime-times">1:30</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Holy Days</span> <span class="showtime-meta">(Not Rated, 1:41)</span>
+                            <span class="showtime-times">5:05</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">A Magnificent Life</span> <span class="showtime-meta">(PG-13, 1:30)</span>
+                            <span class="showtime-times">12:25, 2:55, 5:25, 8:00, 10:30</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">The Mummy Returns - 25th Anniversary</span> <span class="showtime-meta">(PG-13, 2:09)</span>
+                            <span class="showtime-times">3:40, 9:30</span>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name">Waterworks Cinemas</div>
+                        <div class="showtime-neighborhood">Fox Chapel</div>
+                        
+                        <div class="showtime-movie">
+                            <span class="showtime-title">The AI Doc: Or How I Became an Apocaloptimist</span> <span class="showtime-meta">(PG-13, 1:43)</span>
+                            <span class="showtime-times">10:55a, 1:30, 4:15, 6:50, 9:20</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Forbidden Fruits</span> <span class="showtime-meta">(R, 1:43)</span>
+                            <span class="showtime-times">2:40, 7:25, 10:10</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">They Will Kill You</span> <span class="showtime-meta">(R, 1:34)</span>
+                            <span class="showtime-times">12:20, 3:15, 5:30, 7:35, 9:50</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">The Pout-Pout Fish</span> <span class="showtime-meta">(PG, 1:31)</span>
+                            <span class="showtime-times">10:50a, 2:20, 4:30</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Project Hail Mary</span> <span class="showtime-meta">(PG-13, 2:36)</span>
+                            <span class="showtime-times">11:05a, 12:00, 1:00, 2:00, 4:20, 5:05, 5:20, 6:30, 8:20, 8:45, 9:20</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Ready or Not 2: Here I Come</span> <span class="showtime-meta">(R, 1:48)</span>
+                            <span class="showtime-times">11:40a, 2:05, 4:30, 7:45, 10:00</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Reminders of Him</span> <span class="showtime-meta">(PG-13, 1:54)</span>
+                            <span class="showtime-times">10:50a, 1:30, 4:05, 6:45, 9:45</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Hoppers</span> <span class="showtime-meta">(PG, 1:45)</span>
+                            <span class="showtime-times">11:00a, 12:15, 1:30, 4:00, 5:00, 6:40, 9:25 KidsFriendly</span>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name">GQT Pittsburgh Mills</div>
+                        <div class="showtime-neighborhood">Tarentum</div>
+                        
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Ben-Hur - 2026 Re-release</span> <span class="showtime-meta">(G, 3:47)</span>
+                            <span class="showtime-times">2:00</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">The Mummy Returns - 25th Anniversary</span> <span class="showtime-meta">(PG-13, 2:09)</span>
+                            <span class="showtime-times">1:00, 7:00</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">They Will Kill You</span> <span class="showtime-meta">(R, 1:34)</span>
+                            <span class="showtime-times">11:45a, 2:20, 5:00, 7:30, 8:45</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">The Pout-Pout Fish</span> <span class="showtime-meta">(PG, 1:31)</span>
+                            <span class="showtime-times">10:25a, 4:10</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Project Hail Mary</span> <span class="showtime-meta">(PG-13, 2:36)</span>
+                            <span class="showtime-times">10:30a, 12:00, 2:00, 3:30, 5:30, 7:00, 8:15</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Ready or Not 2: Here I Come</span> <span class="showtime-meta">(R, 1:48)</span>
+                            <span class="showtime-times">11:10a, 1:45, 4:30, 7:10</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Reminders of Him</span> <span class="showtime-meta">(PG-13, 1:54)</span>
+                            <span class="showtime-times">11:00a</span>
+                        </div>
+                        <div class="showtime-movie">
+                            <span class="showtime-title">Hoppers</span> <span class="showtime-meta">(PG, 1:45)</span>
+                            <span class="showtime-times">10:45a, 1:15, 3:45, 6:15</span>
+                        </div>
+                    </div>
             </div>
         </section>
+
+        <!-- Around Town -->
+        
         <section class="newspaper-section">
-            <h2 class="section-header">Local Scene</h2>
-            <div class="section-single">
+            <h2 class="section-header">Around Town</h2>
+            <p class="arcane-credit">via <a href="https://arcane.city" class="article-link">Arcane City</a></p>
+            <div class="arcane-grid">
                 
-                <article class="story">
-                    <p class="byline">Pittsburgh Cultural Trust</p>
-                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d1b773f964f930">This week at the Trust: Our 2026-2027 season is revealed in just a few hours!</a></h3>
-                    <p class="summary">The Pittsburgh Cultural Trust is announcing their 2026-2027 season lineup tonight at 7:30 pm, featuring PNC Broadway in Pittsburgh, Trust Cabaret, and Pittsburgh Dance Council. The newsletter also highlights upcoming events including Jonathan Levit in Reality Reinvented, Dwayne Dolphin - No Cover!, Mae Martin: The Possum, and Salsa Nights at the Greer. Additionally, the March Gallery Crawl will be held this Friday, featuring live music, visual art, and performances like Spidrmanthemusical.</p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox/19d1b773f964f930" class="read-more">Read full →</a>
-                </article>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/7532">Sounding Word Sounds</a></h3>
+                        <span class="arcane-date">Sunday March 29th 2026</span>
+                        <p class="arcane-desc">Experience this ear-opening performance of sound poetry, or text-music, recited, chanted, intoned and untoned, reducing language to what it sounds like, not what it means. This performance is...</p>
+                    </div>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/7644">The Grand Duke</a></h3>
+                        <span class="arcane-date">Sunday March 29th 2026</span>
+                        <p class="arcane-desc">The Pittsburgh Savoyards conclude their 88th season this spring with Gilbert and Sullivan’s final operetta, The Grand Duke; or, The Statutory Duel. Performances will be held March 20-22 and 27-29,...</p>
+                    </div>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/7757">Disco Sunday Disco</a></h3>
+                        <span class="arcane-date">Sunday March 29th 2026</span>
+                        <p class="arcane-desc">Disco Sunday Disco is a free, open-air dance party happening at Clement Way Graffiti Alley in Pittsburgh. Enjoy an afternoon and evening of disco and dance music with DJs Hoagie Dreams, Gordy G, and...</p>
+                    </div>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/7794">Zirka Sessions: Bach Bacchanal</a></h3>
+                        <span class="arcane-date">Sunday March 29th 2026</span>
+                        <p class="arcane-desc">On Sunday March 29th, @zirkasessions invites you to the 2nd annual Bach Bacchanal. A party celebrating the music of Bach featuring a string orchestra, chamber choir, accordion, and many talented...</p>
+                    </div>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/7786">Indie Rock Sunday at 222 Ormsby</a></h3>
+                        <span class="arcane-date">Sunday March 29th 2026</span>
+                        <p class="arcane-desc">Four indie rock acts come together in Mt. Oliver to make you dance and feel feelings at 222 Ormsby on a Sunday. You&#x27;ll be in bed by 9:30pm... But more importantly, you&#x27;ll be witnessing Shrub&#x27;s first...</p>
+                    </div>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/6869">Circle Jerks w/ Gorilla Biscuits, Negative Approach</a></h3>
+                        <span class="arcane-date">Sunday March 29th 2026</span>
+                        <p class="arcane-desc">Legendary hardcore punk band Circle Jerks returns to Pittsburgh for a stacked show at the Roxian Theatre with support from New York hardcore icons Gorilla Biscuits and Detroit&#x27;s Negative Approach....</p>
+                    </div>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/7660">Secret Sinema Double Feature: Night of the Creeps with Tom Atkins</a></h3>
+                        <span class="arcane-date">Sunday March 29th 2026</span>
+                        <p class="arcane-desc">Secret Sinema presents a special horror double feature at Thunderbird featuring a guest appearance from legendary actor Tom Atkins. The evening includes a screening of Night of the Creeps and a...</p>
+                    </div>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/7781">This Time&#x27;s Quartet w/ Caprice + Dittocrush/Gamble</a></h3>
+                        <span class="arcane-date">Sunday March 29th 2026</span>
+                        <p class="arcane-desc">This Time&#x27;s Quartet performs an evening of Arabic folk song and audio-visual experimentation, featuring artists from Philly/NYC. The night also includes Caprice, an improv dance duo collaborating...</p>
+                    </div>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/7386">Pile</a></h3>
+                        <span class="arcane-date">Sunday March 29th 2026</span>
+                        <p class="arcane-desc">PILE with support tba $20 ADV / $25 DOS 7PM DOORS / 8PM MUSIC ALL AGES for fans of... Cloud Nothings, Ovlov, Hotline TNT, Cursive BIO: Sunshine and Balance Beams, Pile’s ninth album,...</p>
+                    </div>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/6469">Black Eyes (Hostile Design Tour) w/ The Gotobeds</a></h3>
+                        <span class="arcane-date">Sunday March 29th 2026</span>
+                        <p class="arcane-desc">Spirit Presents: Black Eyes (Dischord Records), known for their aggressive, percussive post-punk, return to Pittsburgh on their &#x27;Hostile Design&#x27; US tour. Local support from The Gotobeds, stalwarts of...</p>
+                    </div>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/7594">Lonely No More w/ Mary Tremonte</a></h3>
+                        <span class="arcane-date">Sunday March 29th 2026</span>
+                        <p class="arcane-desc">Lonely No More is a laid-back barside DJ night featuring special drinks and deep vibrations. On Sunday, March 29, Mary Tremonte DJs from 9pm to 11pm.</p>
+                    </div>
+                    <div class="arcane-event">
+                        <h3 class="arcane-title"><a href="https://arcane.city/events/7621">Legume / Blott / Jewels and More</a></h3>
+                        <span class="arcane-date">Monday March 30th 2026</span>
+                        <p class="arcane-desc">Detroit rock band Legume is playing at the shop with 2 locals : )</p>
+                    </div>
             </div>
         </section>
 
         <!-- Footer -->
         <div class="footer">
             <p>The Bill O'Toole Tribune is compiled automatically from email newsletters.</p>
-            <p>Generated March 23, 2026 at 06:05 PM &mdash; updates automatically</p>
+            <p>Generated March 29, 2026 at 11:13 PM &mdash; updates automatically</p>
         </div>
     </div>
     <script>
