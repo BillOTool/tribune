@@ -395,20 +395,20 @@
 
 
         /* Responsive */
-        @media (max-width: 700px) {{
-            .masthead h1 {{ font-size: 36px; }}
-            .lead-headline {{ font-size: 28px; }}
-            .section-grid {{ grid-template-columns: 1fr; }}
-            .section-grid > .story:nth-child(odd) {{
+        @media (max-width: 700px) {
+            .masthead h1 { font-size: 36px; }
+            .lead-headline { font-size: 28px; }
+            .section-grid { grid-template-columns: 1fr; }
+            .section-grid > .story:nth-child(odd) {
                 padding-right: 0;
                 border-right: none;
                 border-bottom: 1px solid #333;
                 padding-bottom: 16px;
-            }}
-            .section-grid > .story:nth-child(even) {{
+            }
+            .section-grid > .story:nth-child(even) {
                 padding-left: 0;
-            }}
-        }}
+            }
+        }
     </style>
 </head>
 <body>
@@ -416,9 +416,9 @@
         <!-- Masthead -->
         <header class="masthead">
             <div class="masthead-top">
-                <span>{date_str}</span>
-                <span>{edition}</span>
-                <span>{total} stories today</span>
+                <span>Sunday, March 29, 2026</span>
+                <span>Vol. I, No. 088</span>
+                <span>6 stories today</span>
             </div>
             <h1>The Bill O&rsquo;Toole Tribune</h1>
             <p class="masthead-subtitle">All the newsletters that&rsquo;s fit to print</p>
@@ -426,40 +426,423 @@
         </header>
 
         <!-- Lead Story -->
-        {lead_html}
+        
+            <article class="lead-story">
+                <p class="kicker">Robert Reich</p>
+                <h2 class="lead-headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d3b75dcd4b7efb">Sunday caption contest: Best Sign?</a></h2>
+                <p class="lead-summary">Robert Reich&#x27;s newsletter features a weekly caption contest based on a provided image, where readers submit captions in the comments. Last week&#x27;s winning caption, submitted by Karla Von Huben, was: “Quick! Toss him an anchor!”. Runners-up included captions from Marianne Borozny, Mike, Russell Bixby, margaret kelly, Jean Knowlton, and Timothy Anton Ash.</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox/19d3b75dcd4b7efb" class="read-more">Read full story →</a>
+            </article>
 
         <!-- Sections -->
-        {sections_html}
+        
+        <section class="newspaper-section">
+            <h2 class="section-header">Opinion</h2>
+            <div class="section-grid">
+                
+                <article class="story">
+                    <p class="byline">Adam Tooze from Chartbook</p>
+                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d3933910523dc1">Fertilizer plants out. Warehousing people. Overcoming modernity. Normcore.</a></h3>
+                    <p class="summary">Adam Tooze&#x27;s Chartbook newsletter provides a curated list of links, images, and reading materials covering diverse topics. This edition includes items on fertilizer plants, warehousing, modernity, and &#x27;normcore&#x27;. It also features a map from the Financial Times and a piece cross-posted on ChinaTalk about China&#x27;s technology strategy.</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox/19d3933910523dc1" class="read-more">Read full →</a>
+                </article>
+                <article class="story">
+                    <p class="byline">Paul Krugman from Paul Krugman</p>
+                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d392b5ab7a850b">Is America Suffering from the “Resource Curse”?</a></h3>
+                    <p class="summary">Paul Krugman discusses whether the U.S. is suffering from the &quot;resource curse&quot; due to its status as a major oil producer. He argues that the U.S. is becoming the &quot;last big petrostate,&quot; aligning itself with countries like Kuwait, Saudi Arabia, and Iran, where economies and politics are significantly influenced by oil and gas. He suggests this alignment, especially during a critical period for climate change, could be detrimental.</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox/19d392b5ab7a850b" class="read-more">Read full →</a>
+                </article>
+                <article class="story">
+                    <p class="byline">Robert Reich</p>
+                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d38ac2c4617266">Sunday thought: Turning Yesterday&#x27;s Solidarity into Political Power</a></h3>
+                    <p class="summary">Robert Reich reflects on a day of solidarity demonstrated by millions of people opposing Trump&#x27;s policies on various issues, including war in Iran, immigration, and climate change. He proposes three strategies to translate this solidarity into political power: targeting vulnerable Republican senators and House members, building grassroots movements around specific policy changes, and creating &quot;truth squads&quot; to counter disinformation.</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox/19d38ac2c4617266" class="read-more">Read full →</a>
+                </article>
+                <article class="story">
+                    <p class="byline">Robert Reich</p>
+                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d35216493cbaab">Toward a Pro-Democracy Movement</a></h3>
+                    <p class="summary">Robert Reich explains why he is demonstrating in support of a pro-democracy movement, arguing that Trump is a consequence of decades of neglect and growing cynicism towards the system. He cites a statistic that in 1964, 29% of voters believed the government was run by a few big interests, while by 2013, this number had risen to 79%. Reich believes that a pro-democracy movement must address widening inequality of income, wealth, and opportunity.</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox/19d35216493cbaab" class="read-more">Read full →</a>
+                </article>
+            </div>
+        </section>
+        <section class="newspaper-section">
+            <h2 class="section-header">Politics &amp; Policy</h2>
+            <div class="section-single">
+                
+                <article class="story">
+                    <p class="byline">Corbin Trent with America&#x27;s Undoing</p>
+                    <h3 class="headline"><a href="https://mail.google.com/mail/u/0/#inbox/19d39fe7dc7412b7">We Showed up. Our Leaders Schemed.</a></h3>
+                    <p class="summary">Corbin Trent reports that millions protested in all 50 states against war, with over 3,300 events, many in GOP strongholds. Despite 76% of voters opposing the war, Senate Democrats allegedly wanted Trump to prosecute it for political gain. According to Drop Site News, House Democrats had enough votes, including three Republicans ready to cross the aisle, but did not act.</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox/19d39fe7dc7412b7" class="read-more">Read full →</a>
+                </article>
+            </div>
+        </section>
 
         <!-- Showtimes -->
-        {showtimes_html}
+        
+        <section class="newspaper-section">
+            <h2 class="section-header">Showtimes</h2>
+            <p class="showtime-date">Sunday, March 29</p>
+            <div class="showtime-grid">
+                
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name"><a href="https://www.manorpgh.com/movies" class="showtime-theater-link">Manor Theatre</a></div>
+                        <div class="showtime-neighborhood">Squirrel Hill</div>
+                        
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">The AI Doc: Or How I Became an Apocaloptimist <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">12:50, 3:00, 5:10, 7:20, 9:30</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Project Hail Mary <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">12:20, 1:50, 3:25, 4:55, 6:30, 8:00, 9:35</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Hoppers <span class="showtime-rating">PG</span></div>
+                            <div class="showtime-times">11:50a, 2:00, 4:10, 6:20, 8:30</div>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name"><a href="https://rowhousecinemas.com" class="showtime-theater-link">Row House Cinema</a></div>
+                        <div class="showtime-neighborhood">Lawrenceville</div>
+                        
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Gentlemen Prefer Blondes <span class="showtime-rating">Not Rated</span></div>
+                            <div class="showtime-times">2:55</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">The Red Shoes <span class="showtime-rating">Not Rated</span></div>
+                            <div class="showtime-times">12:15</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Black Narcissus <span class="showtime-rating">Not Rated</span></div>
+                            <div class="showtime-times">4:50</div>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name"><a href="https://rowhousecinemas.com" class="showtime-theater-link">Row House Cinema — Hollywood</a></div>
+                        <div class="showtime-neighborhood">Dormont</div>
+                        
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Alpha <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">2:00, 4:40, 7:20</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Andre Is an Idiot <span class="showtime-rating">Not Rated</span></div>
+                            <div class="showtime-times">2:30, 4:45, 7:30</div>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name"><a href="https://trustarts.org/pct_home/visit/facilities/harris-theater" class="showtime-theater-link">Harris Theater</a></div>
+                        <div class="showtime-neighborhood">Downtown</div>
+                        
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Billy Preston: That&#x27;s The Way God Planned It <span class="showtime-rating">Not Rated</span></div>
+                            <div class="showtime-times">7:30</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">A Poet (Un poeta) <span class="showtime-rating">Not Rated</span></div>
+                            <div class="showtime-times">2:30</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Two-Lane Blacktop <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">5:00</div>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name"><a href="https://www.dependabledrivein.com" class="showtime-theater-link">Dependable Drive-In</a></div>
+                        <div class="showtime-neighborhood">Moon Twp.</div>
+                        
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Forbidden Fruits <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">7:55</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Project Hail Mary <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">7:50</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Undertone <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">10:40</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Hoppers <span class="showtime-rating">PG</span></div>
+                            <div class="showtime-times">7:55</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Scream 7 <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">9:45</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">GOAT <span class="showtime-rating">PG</span></div>
+                            <div class="showtime-times">9:45</div>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name"><a href="https://carnegieart.org/events/format/screenings/" class="showtime-theater-link">Carnegie Museum of Art</a></div>
+                        <div class="showtime-neighborhood">Oakland</div>
+                        
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Workingman’s Death</div>
+                            <div class="showtime-times">Thurs., Dec. 10, 7 p.m.</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Made in Bangladesh</div>
+                            <div class="showtime-times">Thurs., Nov. 12, 7 p.m.</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Born in Flames</div>
+                            <div class="showtime-times">Thurs., Oct. 8, 7 p.m.</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">This Is Not a Burial, It’s a Resurrection</div>
+                            <div class="showtime-times">Thurs., Sept. 10, 7 p.m.</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Silence Of Reason and Gama</div>
+                            <div class="showtime-times">Thurs., Aug. 6, 7 p.m.</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Europa: Based on a True Story</div>
+                            <div class="showtime-times">Thurs., July 9, 7 p.m.</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">West Indies: The Fugitive Slaves of Liberty</div>
+                            <div class="showtime-times">Thurs., June 11, 7 p.m.</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Surrealism as Tactic: A Black Women’s Film Festival and Community Workshop</div>
+                            <div class="showtime-times">Thurs., Feb. 26, 6 p.m.</div>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name"><a href="https://www.amctheatres.com/movie-theatres/pittsburgh/amc-waterfront-22" class="showtime-theater-link">AMC Waterfront 22</a></div>
+                        <div class="showtime-neighborhood">Homestead</div>
+                        
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Ben-Hur - 2026 Re-release <span class="showtime-rating">G</span></div>
+                            <div class="showtime-times">2:00</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">The AI Doc: Or How I Became an Apocaloptimist <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">2:05, 4:55, 7:45, 10:30</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Alpha <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">12:10</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Alpha <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">3:00, 6:05, 9:10</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Forbidden Fruits <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">1:30</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Holy Days <span class="showtime-rating">Not Rated</span></div>
+                            <div class="showtime-times">5:05</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">A Magnificent Life <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">12:25, 2:55, 5:25, 8:00, 10:30</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">The Mummy Returns - 25th Anniversary <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">3:40, 9:30</div>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name"><a href="https://www.moviescoopcinemas.com/waterworks" class="showtime-theater-link">Waterworks Cinemas</a></div>
+                        <div class="showtime-neighborhood">Fox Chapel</div>
+                        
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">The AI Doc: Or How I Became an Apocaloptimist <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">10:55a, 1:30, 4:15, 6:50, 9:20</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Forbidden Fruits <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">2:40, 7:25, 10:10</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">They Will Kill You <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">12:20, 3:15, 5:30, 7:35, 9:50</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">The Pout-Pout Fish <span class="showtime-rating">PG</span></div>
+                            <div class="showtime-times">10:50a, 2:20, 4:30</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Project Hail Mary <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">11:05a, 12:00, 1:00, 2:00, 4:20, 5:05, 5:20, 6:30, 8:20, 8:45, 9:20</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Ready or Not 2: Here I Come <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">11:40a, 2:05, 4:30, 7:45, 10:00</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Reminders of Him <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">10:50a, 1:30, 4:05, 6:45, 9:45</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Hoppers <span class="showtime-rating">PG</span></div>
+                            <div class="showtime-times">11:00a, 12:15, 1:30, 4:00, 5:00, 6:40, 9:25 KidsFriendly</div>
+                        </div>
+                    </div>
+                    <div class="showtime-card">
+                        <div class="showtime-theater-name"><a href="https://gqtmovies.com/GQT-Pittsburgh-Mills-Cinema/" class="showtime-theater-link">GQT Pittsburgh Mills</a></div>
+                        <div class="showtime-neighborhood">Tarentum</div>
+                        
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Ben-Hur - 2026 Re-release <span class="showtime-rating">G</span></div>
+                            <div class="showtime-times">2:00</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">The Mummy Returns - 25th Anniversary <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">1:00, 7:00</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">They Will Kill You <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">11:45a, 2:20, 5:00, 7:30, 8:45</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">The Pout-Pout Fish <span class="showtime-rating">PG</span></div>
+                            <div class="showtime-times">10:25a, 4:10</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Project Hail Mary <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">10:30a, 12:00, 2:00, 3:30, 5:30, 7:00, 8:15</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Ready or Not 2: Here I Come <span class="showtime-rating">R</span></div>
+                            <div class="showtime-times">11:10a, 1:45, 4:30, 7:10</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Reminders of Him <span class="showtime-rating">PG-13</span></div>
+                            <div class="showtime-times">11:00a</div>
+                        </div>
+                        <div class="showtime-movie">
+                            <div class="showtime-title-row">Hoppers <span class="showtime-rating">PG</span></div>
+                            <div class="showtime-times">10:45a, 1:15, 3:45, 6:15</div>
+                        </div>
+                    </div>
+            </div>
+        </section>
 
         <!-- Around Town -->
-        {arcane_html}
+        
+        <section class="newspaper-section">
+            <h2 class="section-header">Around Town</h2>
+            <p class="arcane-credit">via <a href="https://arcane.city" class="article-link">Arcane City</a></p>
+            
+                <div class="arcane-date-group">
+                    <div class="arcane-date-header">Sunday March 29th 2026</div>
+                    <div class="arcane-grid">
+                        
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7532">Sounding Word Sounds</a></h3>
+                            <p class="arcane-desc">Experience this ear-opening performance of sound poetry, or text-music, recited, chanted, intoned and untoned, reducing language to what it sounds like, not what it means. This performance is...</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7644">The Grand Duke</a></h3>
+                            <p class="arcane-desc">The Pittsburgh Savoyards conclude their 88th season this spring with Gilbert and Sullivan’s final operetta, The Grand Duke; or, The Statutory Duel. Performances will be held March 20-22 and 27-29,...</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7757">Disco Sunday Disco</a></h3>
+                            <p class="arcane-desc">Disco Sunday Disco is a free, open-air dance party happening at Clement Way Graffiti Alley in Pittsburgh. Enjoy an afternoon and evening of disco and dance music with DJs Hoagie Dreams, Gordy G, and...</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7794">Zirka Sessions: Bach Bacchanal</a></h3>
+                            <p class="arcane-desc">On Sunday March 29th, @zirkasessions invites you to the 2nd annual Bach Bacchanal. A party celebrating the music of Bach featuring a string orchestra, chamber choir, accordion, and many talented...</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7786">Indie Rock Sunday at 222 Ormsby</a></h3>
+                            <p class="arcane-desc">Four indie rock acts come together in Mt. Oliver to make you dance and feel feelings at 222 Ormsby on a Sunday. You&#x27;ll be in bed by 9:30pm... But more importantly, you&#x27;ll be witnessing Shrub&#x27;s first...</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/6869">Circle Jerks w/ Gorilla Biscuits, Negative Approach</a></h3>
+                            <p class="arcane-desc">Legendary hardcore punk band Circle Jerks returns to Pittsburgh for a stacked show at the Roxian Theatre with support from New York hardcore icons Gorilla Biscuits and Detroit&#x27;s Negative Approach....</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7660">Secret Sinema Double Feature: Night of the Creeps with Tom Atkins</a></h3>
+                            <p class="arcane-desc">Secret Sinema presents a special horror double feature at Thunderbird featuring a guest appearance from legendary actor Tom Atkins. The evening includes a screening of Night of the Creeps and a...</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7781">This Time&#x27;s Quartet w/ Caprice + Dittocrush/Gamble</a></h3>
+                            <p class="arcane-desc">This Time&#x27;s Quartet performs an evening of Arabic folk song and audio-visual experimentation, featuring artists from Philly/NYC. The night also includes Caprice, an improv dance duo collaborating...</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7386">Pile</a></h3>
+                            <p class="arcane-desc">PILE with support tba $20 ADV / $25 DOS 7PM DOORS / 8PM MUSIC ALL AGES for fans of... Cloud Nothings, Ovlov, Hotline TNT, Cursive BIO: Sunshine and Balance Beams, Pile’s ninth album,...</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/6469">Black Eyes (Hostile Design Tour) w/ The Gotobeds</a></h3>
+                            <p class="arcane-desc">Spirit Presents: Black Eyes (Dischord Records), known for their aggressive, percussive post-punk, return to Pittsburgh on their &#x27;Hostile Design&#x27; US tour. Local support from The Gotobeds, stalwarts of...</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7594">Lonely No More w/ Mary Tremonte</a></h3>
+                            <p class="arcane-desc">Lonely No More is a laid-back barside DJ night featuring special drinks and deep vibrations. On Sunday, March 29, Mary Tremonte DJs from 9pm to 11pm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arcane-date-group">
+                    <div class="arcane-date-header">Monday March 30th 2026</div>
+                    <div class="arcane-grid">
+                        
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7621">Legume / Blott / Jewels and More</a></h3>
+                            <p class="arcane-desc">Detroit rock band Legume is playing at the shop with 2 locals : )</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7210">Club Cafe Presents: Now You&#x27;re A Circle Tour</a></h3>
+                            <p class="arcane-desc">Boys Go To Jupiter is most definitely a band. But it feels like something else — a friend you can just talk to for hours, a story that hooks you from the first word. This Brooklyn-based trio blends...</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7484">Level Up Official After Party</a></h3>
+                            <p class="arcane-desc">Official Level Up after party at Goldmark featuring Big Once (Chicago), DJ Spark (Los Angeles), and Skratch Bastid (Toronto). $10 at the door. Free for Level Up conference attendees. 21+.</p>
+                        </div>
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/7690">Treasure</a></h3>
+                            <p class="arcane-desc">Treasure is an evening exploring dreamy and experimental sounds spanning dreampop, ethereal ambient, experimental electronic, shoegaze, haunt, synthwave, classicalcore, eco-pop, martialalia,...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arcane-date-group">
+                    <div class="arcane-date-header">Tuesday March 31st 2026</div>
+                    <div class="arcane-grid">
+                        
+                        <div class="arcane-event">
+                            <h3 class="arcane-title"><a href="https://arcane.city/events/6915">Emperor - Emperial Wrath Tour w/ Blood Incantation</a></h3>
+                            <p class="arcane-desc">Amplified Alpine and Photograve Management present black metal pioneers **Emperor** on their Emperial Wrath North America 2026 tour, live at the Roxian Theater in Pittsburgh on March 31. Special...</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
         <!-- Footer -->
         <div class="footer">
             <p>The Bill O'Toole Tribune is compiled automatically from email newsletters.</p>
-            <p>Generated {now.strftime("%B %d, %Y at %I:%M %p")} &mdash; updates automatically</p>
+            <p>Generated March 29, 2026 at 11:27 PM &mdash; updates automatically</p>
         </div>
     </div>
     <script>
         // Poll for content updates every 60 seconds
         let currentVersion = null;
-        async function checkForUpdates() {{
-            try {{
+        async function checkForUpdates() {
+            try {
                 const resp = await fetch('/version');
                 const data = await resp.json();
-                if (currentVersion === null) {{
+                if (currentVersion === null) {
                     currentVersion = data.version;
-                }} else if (data.version !== currentVersion) {{
+                } else if (data.version !== currentVersion) {
                     // Smooth reload: fade out, reload, fade in
                     document.body.style.transition = 'opacity 0.3s';
                     document.body.style.opacity = '0';
                     setTimeout(() => location.reload(), 300);
-                }}
-            }} catch(e) {{}}
-        }}
+                }
+            } catch(e) {}
+        }
         setInterval(checkForUpdates, 60000);
         checkForUpdates();
     </script>
